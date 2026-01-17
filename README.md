@@ -35,3 +35,8 @@ index=main sourcetype=linux_secure "Failed password"
 | stats count BY src_ip
 | where count > 5
 ```                                                                                                                                       
+## Planned Enhancements
+
+- Add additional SPL detections (per-user thresholds, success-after-fail patterns, and geo/anomaly-based SSH activity)
+- Ingest web application logs (e.g., DVWA/Juice Shop) for multi-source correlation
+- Document example alert configurations, incident investigation steps, and screenshots of dashboards
